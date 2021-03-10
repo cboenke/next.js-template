@@ -9,7 +9,10 @@
     "eslint": "eslint .",
     "stylelint": "stylelint \"**/*.css\"",
     "prettify": "prettier --write .",
-    "prepare": "husky install"
+    "prettycheck": "prettier --check .",
+    "prepare": "husky install",
+    "typecheck": "tsc",
+    "test": "npm run eslint && npm run stylelint && npm run prettycheck && npm run typecheck"
   },
   "dependencies": {
     "next": "10.0.8",
